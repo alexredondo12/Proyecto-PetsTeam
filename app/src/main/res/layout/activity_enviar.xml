@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bginicio"
+    tools:context=".Activity_enviar">
+
+    <TextView
+        android:id="@+id/caja5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordes_redondos"
+
+        android:padding="15dp"
+        android:backgroundTint="#DDDDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:text="Enviar un mensaje."
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/caja5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/caja5" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="55dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnEnviar3"
+            android:layout_width="290dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#DDDDDD"
+            android:text="Enviar"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/caja3"
+            app:layout_constraintStart_toStartOf="@+id/caja3"
+            app:layout_constraintTop_toBottomOf="@+id/caja3"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/caja"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/bordes_redondos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/caja2"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/bordes_redondos"
+            app:layout_constraintEnd_toEndOf="@+id/caja"
+            app:layout_constraintStart_toStartOf="@+id/caja"
+            app:layout_constraintTop_toBottomOf="@+id/caja" />
+
+        <TextView
+            android:id="@+id/caja3"
+            android:layout_width="310dp"
+            android:layout_height="261dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/bordes_redondos"
+            app:layout_constraintEnd_toEndOf="@+id/caja4"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/caja4"
+            app:layout_constraintTop_toBottomOf="@+id/caja2" />
+
+        <TextView
+            android:id="@+id/caja4"
+            android:layout_width="335dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="66dp"
+            android:layout_height="30dp"
+            android:text=".    .    ."
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="@+id/caja" />
+
+        <TextView
+            android:id="@+id/nombreProd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="nombreProducto"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="75dp"
+            android:text="Para:"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/caja"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="119dp"
+            android:text="Asunto:"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/para2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="correo@gmail.com"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Nuevo mensaje"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/caja4"
+            app:layout_constraintStart_toStartOf="@+id/caja4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/mensaje2"
+            android:layout_width="257dp"
+            android:layout_height="196dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Escriba su mensaje aquí ..."
+            android:inputType="textMultiLine"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/caja3"
+            app:layout_constraintEnd_toEndOf="@+id/caja3"
+            app:layout_constraintStart_toStartOf="@+id/caja3"
+            app:layout_constraintTop_toTopOf="@+id/caja3" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/foto_prod"
+            android:layout_width="103dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginRight="65dp"
+            android:scaleType="centerCrop"
+            android:src="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.218"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="24dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

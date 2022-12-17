@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1015325494444",
+    "project_id": "petsteam-f3d4e",
+    "storage_bucket": "petsteam-f3d4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015325494444:android:d5601cc88e8c95f6556309",
+        "android_client_info": {
+          "package_name": "com.example.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015325494444-00i5vc5upr76u519d617t81io99v35v3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectofinal",
+            "certificate_hash": "025d2721ed51b168a7e3262e3a5147de6d4ed78c"
+          }
+        },
+        {
+          "client_id": "1015325494444-d0spbirck09j1hhgumht2lvg1mf3pmr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABh-EoE4UKd3w35WVi58PJ0YATF16nk4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015325494444-d0spbirck09j1hhgumht2lvg1mf3pmr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

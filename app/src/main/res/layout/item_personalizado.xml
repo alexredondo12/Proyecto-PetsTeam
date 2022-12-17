@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+    app:spanCount="2"
+    android:src="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="201dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:background="@drawable/bordes_redondos"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toStartOf="@+id/correo"
+            app:layout_constraintTop_toTopOf="@+id/correo" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="76dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#DDDDDD"
+            android:text="COMPRAR"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Talla"
+            app:layout_constraintTop_toTopOf="@+id/Talla"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/Talla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talla"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_mensaje"
+            app:layout_constraintStart_toEndOf="@+id/txt_mensaje"
+            app:layout_constraintTop_toTopOf="@+id/txt_mensaje" />
+
+        <TextView
+            android:id="@+id/Precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="0.0"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="€"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Precio" />
+
+        <TextView
+            android:id="@+id/Descripcion"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:text="Descripcion"
+            android:textAlignment="viewStart"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/Nombre"
+            app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+        <TextView
+            android:id="@+id/txt_mensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="/ Talla: "
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Precio"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/Precio" />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="correo@gmail.com"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_foto1"
+            app:layout_constraintEnd_toEndOf="@+id/txt_foto1"
+            app:layout_constraintStart_toStartOf="@+id/txt_foto1" />
+
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Nombre"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_foto1" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/txt_foto1"
+            android:layout_width="175dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:src="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="14dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

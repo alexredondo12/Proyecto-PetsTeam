@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/inicio"
+        android:title="Principal" />
+
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Subir" />
+
+    <item
+        android:id="@+id/cuartoFragment"
+        android:icon="@drawable/perfil2"
+        android:title="Perfil"
+        />
+
+    <item
+        android:id="@+id/quintoFragment"
+        android:icon="@drawable/chat"
+        android:title="Chat"/>
+
+
+
+</menu>
