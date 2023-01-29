@@ -1,6 +1,6 @@
 # Proyecto- PetsTeam
 
-App para movil android, desarrollada en lenguaje JAVA. Se realizó a traves de Android Studio.
+App para dispositivos android, desarrollada en lenguaje JAVA. Se realizó a traves de Android Studio.
 <br>
 Presentacion del proyecto:
 <br>
